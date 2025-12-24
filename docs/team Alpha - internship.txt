@@ -1,0 +1,149 @@
+team-alpha-platform/
+│
+├── homepage-module/                    # TEAM 1 – Public Website
+│   ├── frontend/
+│   │   ├── public/
+│   │   ├── src/
+│   │   │   ├── pages/                  # Page-level views
+│   │   │   │   ├── Home.jsx
+│   │   │   │   ├── About.jsx
+│   │   │   │   ├── Services.jsx
+│   │   │   │   ├── Gallery.jsx
+│   │   │   │   ├── Blogs.jsx
+│   │   │   │   └── Contact.jsx
+│   │   │   │
+│   │   │   ├── components/             # Reusable UI components
+│   │   │   ├── assets/                 # Images, icons, styles
+│   │   │   ├── services/               # API calls
+│   │   │   │   ├── inquiry.service.js
+│   │   │   │   ├── blog.service.js
+│   │   │   │   └── gallery.service.js
+│   │   │   │
+│   │   │   ├── routes/                 # Frontend routing (optional)
+│   │   │   └── App.jsx
+│   │   └── package.json
+│   │
+│   └── backend/
+│       ├── src/
+│       │   ├── routes/
+│       │   │   ├── inquiry.routes.js
+│       │   │   ├── blog.routes.js
+│       │   │   └── gallery.routes.js
+│       │   │
+│       │   ├── controllers/
+│       │   │   ├── inquiry.controller.js
+│       │   │   ├── blog.controller.js
+│       │   │   └── gallery.controller.js
+│       │   │
+│       │   ├── models/
+│       │   │   ├── Inquiry.model.js
+│       │   │   ├── Blog.model.js
+│       │   │   └── Gallery.model.js
+│       │   │
+│       │   ├── config/
+│       │   │   └── db.js
+│       │   │
+│       │   └── app.js
+│       ├── server.js
+│       ├── .env
+│       └── package.json
+│
+├── client-module/                      # TEAM 2 – Client Portal
+│   ├── frontend/
+│   │   ├── src/
+│   │   │   ├── pages/
+│   │   │   │   ├── Dashboard.jsx
+│   │   │   │   ├── Portfolio.jsx
+│   │   │   │   ├── Timeline.jsx
+│   │   │   │   ├── Payments.jsx
+│   │   │   │   └── Messages.jsx
+│   │   │   │
+│   │   │   ├── components/
+│   │   │   ├── services/
+│   │   │   │   ├── auth.service.js
+│   │   │   │   ├── portfolio.service.js
+│   │   │   │   ├── payment.service.js
+│   │   │   │   └── timeline.service.js
+│   │   │   │
+│   │   │   └── App.jsx
+│   │   └── package.json
+│   │
+│   └── backend/
+│       ├── src/
+│       │   ├── routes/
+│       │   │   ├── auth.routes.js
+│       │   │   ├── portfolio.routes.js
+│       │   │   ├── payment.routes.js
+│       │   │   └── timeline.routes.js
+│       │   │
+│       │   ├── controllers/
+│       │   ├── models/
+│       │   ├── config/
+│       │   │   └── db.js
+│       │   └── app.js
+│       ├── server.js
+│       ├── .env
+│       └── package.json
+│
+├── admin-module/                       # TEAM 3 – Admin Dashboard
+│   ├── frontend/
+│   │   ├── src/
+│   │   │   ├── pages/
+│   │   │   │   ├── Dashboard.jsx
+│   │   │   │   ├── Leads.jsx
+│   │   │   │   ├── Bookings.jsx
+│   │   │   │   ├── CRM.jsx
+│   │   │   │   ├── Vendors.jsx
+│   │   │   │   ├── Finance.jsx
+│   │   │   │   └── Reports.jsx
+│   │   │   │
+│   │   │   ├── components/
+│   │   │   ├── services/
+│   │   │   │   ├── adminAuth.service.js
+│   │   │   │   ├── leads.service.js
+│   │   │   │   ├── booking.service.js
+│   │   │   │   ├── vendor.service.js
+│   │   │   │   └── finance.service.js
+│   │   │   │
+│   │   │   └── App.jsx
+│   │   └── package.json
+│   │
+│   └── backend/
+│       ├── src/
+│       │   ├── routes/
+│       │   │   ├── auth.routes.js
+│       │   │   ├── leads.routes.js
+│       │   │   ├── booking.routes.js
+│       │   │   ├── vendor.routes.js
+│       │   │   ├── finance.routes.js
+│       │   │   └── crm.routes.js
+│       │   │
+│       │   ├── controllers/
+│       │   ├── models/
+│       │   ├── config/
+│       │   │   └── db.js
+│       │   └── app.js
+│       ├── server.js
+│       ├── .env
+│       └── package.json
+│
+├── shared/                             # SHARED UTILITIES
+│   ├── database/
+│   │   └── mongo.js
+│   ├── auth/
+│   │   └── jwt.js
+│   ├── middlewares/
+│   │   ├── auth.middleware.js
+│   │   └── error.middleware.js
+│   └── constants/
+│       └── roles.js
+│
+├── docs/
+│   ├── Synopsis.pdf
+│   ├── SOP.pdf
+│   ├── ER-Diagram.png
+│   └── API-Flow.md
+│
+├── .gitignore
+├── README.md
+└── package.json                        # OPTIONAL (root scripts)
